@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events - Ludiparc</title>
+  <meta name="description" content="Upcoming events and news at Ludiparc Meknes: karting races, family days, and pool parties.">
+  <title>Events - Ludiparc Meknes</title>
+  <meta name="theme-color" content="#004aad">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
 </head>
-<body>
+<body class="no-scroll">
+  <div class="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="preload-logo">
+      <span class="ring" aria-hidden="true"></span>
+      <img src="images/logo.png" alt="Ludiparc logo">
+    </div>
+    <div class="loading-text">Loading...</div>
+  </div>
   <!-- Navbar -->
   <nav>
     <img src="images/logo.png" class="logo" alt="Ludiparc Logo">
-    <ul>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <ul id="primary-nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
@@ -25,32 +36,51 @@
 
   <!-- Events Section -->
   <main class="events-section">
-    <h1>🎉 Events & News</h1>
+    <h1>Events & News</h1>
     <div class="events-container">
 
-      <!-- Example Event Card -->
       <div class="event-card">
         <h2>Karting Championship</h2>
-        <p>🏎️ Join us for our annual karting race event. Compete with friends and win exciting prizes!</p>
+        <p>Join us for our annual karting race event. Compete with friends and win exciting prizes!</p>
         <p><strong>Date:</strong> July 20, 2025</p>
       </div>
 
       <div class="event-card">
         <h2>Family Day Special</h2>
-        <p>👨‍👩‍👧‍👦 Bring your family for a fun day with discounted entry tickets and special activities for kids.</p>
+        <p>Bring your family for a fun day with discounted entry tickets and special activities for kids.</p>
         <p><strong>Date:</strong> August 5, 2025</p>
       </div>
 
       <div class="event-card">
         <h2>Pool Party Weekend</h2>
-        <p>🏊‍♂️ Cool off this summer with our pool party weekend. Music, games, and refreshing drinks await you!</p>
-        <p><strong>Date:</strong> August 15–16, 2025</p>
+        <p>Cool off this summer with our pool party weekend. Music, games, and refreshing drinks await you!</p>
+        <p><strong>Date:</strong> August 15-16, 2025</p>
       </div>
 
     </div>
   </main>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/212600000000" class="whatsapp-float">💬</a>
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>Visit Us</h3>
+        <p>Zahoua, Meknes, Morocco</p>
+        <p>Daily: 10:00–20:00</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+212600000000">+212 600 000 000</a></p>
+        <p><a href="mailto:contact@ludiparc-meknes.com">contact@ludiparc-meknes.com</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 Ludiparc Meknes. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/212600000000" class="whatsapp-float" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>

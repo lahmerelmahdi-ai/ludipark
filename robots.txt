@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the URL to your final domain
+# Sitemap: https://www.example.com/sitemap.xml

@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ludiparc Meknès</title>
+  <meta name="description" content="Ludiparc Meknes: Karting, swimming pool, restaurant and kids park. A family-friendly leisure park in Meknes, Morocco.">
+  <meta name="theme-color" content="#004aad">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ludiparc Meknes">
+  <meta property="og:description" content="Karting, swimming, restaurant and kids park in Meknes.">
+  <meta property="og:image" content="images/hero.jpg">
+  <title>Ludiparc Meknes</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
-<body>
+<body class="no-scroll">
+  <div class="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="preload-logo">
+      <span class="ring" aria-hidden="true"></span>
+      <img src="images/logo.png" alt="Ludiparc logo">
+    </div>
+    <div class="loading-text">Loading...</div>
+  </div>
   <!-- Navbar -->
   <nav>
     <img src="images/logo.png" alt="Ludiparc Logo" class="logo">
-    <ul>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <ul id="primary-nav">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
@@ -27,33 +41,33 @@
   <!-- Large Hero Image Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Welcome to Ludiparc Meknès</h1>
-      <p>Karting • Swimming • Restaurant • Kids Park</p>
+      <h1>Welcome to Ludiparc Meknes</h1>
+      <p>Karting | Swimming | Restaurant | Kids Park</p>
       <a href="services.html" class="btn">Discover More</a>
     </div>
   </section>
 
   <!-- Attractions Section -->
   <main class="home-section">
-    <h2>✨ Our Attractions</h2>
+    <h2>Our Attractions</h2>
     <div class="home-container">
       <div class="home-card">
-        <h3>🏎️ Karting</h3>
+        <h3>Karting</h3>
         <p>Thrilling kart tracks designed for both kids and adults. Experience the speed!</p>
       </div>
 
       <div class="home-card">
-        <h3>🏊 Swimming Pool</h3>
+        <h3>Swimming Pool</h3>
         <p>Relax and refresh in our modern pool with clean facilities and sun loungers.</p>
       </div>
 
       <div class="home-card">
-        <h3>🍴 Restaurant</h3>
+        <h3>Restaurant</h3>
         <p>Delicious meals, snacks, and drinks to recharge after a fun day at the park.</p>
       </div>
 
       <div class="home-card">
-        <h3>🎠 Kids Playground</h3>
+        <h3>Kids Playground</h3>
         <p>A safe and fun space for children with activities to keep them entertained.</p>
       </div>
     </div>
@@ -61,10 +75,27 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ludiparc Meknès. All rights reserved.</p>
+    <div class="footer-columns">
+      <div>
+        <h3>Visit Us</h3>
+        <p>Zahoua, Meknes, Morocco</p>
+        <p>Daily: 10:00–20:00</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+212600000000">+212 600 000 000</a></p>
+        <p><a href="mailto:contact@ludiparc-meknes.com">contact@ludiparc-meknes.com</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 Ludiparc Meknes. All rights reserved.</p>
   </footer>
 
   <!-- Floating WhatsApp -->
-  <a href="https://wa.me/212600000000" class="whatsapp-float">💬</a>
+  <a href="https://wa.me/212600000000" class="whatsapp-float" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>

@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing - Ludiparc</title>
+  <meta name="description" content="Ludiparc Meknes pricing for karting, pool, kids playground, and restaurant.">
+  <title>Pricing - Ludiparc Meknes</title>
+  <meta name="theme-color" content="#004aad">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
 </head>
-<body>
+<body class="no-scroll">
+  <div class="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="preload-logo">
+      <span class="ring" aria-hidden="true"></span>
+      <img src="images/logo.png" alt="Ludiparc logo">
+    </div>
+    <div class="loading-text">Loading...</div>
+  </div>
   <!-- Navbar -->
   <nav>
     <img src="images/logo.png" class="logo" alt="Ludiparc Logo">
-    <ul>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <ul id="primary-nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
@@ -25,29 +36,29 @@
 
   <!-- Pricing Section -->
   <main class="pricing-section">
-    <h1>💰 Pricing</h1>
+    <h1>Pricing</h1>
     <div class="pricing-container">
 
       <div class="pricing-card">
-        <h2>🏎️ Karting Session</h2>
+        <h2>Karting Session</h2>
         <p>Experience the thrill of speed on our karting track.</p>
         <p class="price">100 MAD</p>
       </div>
 
       <div class="pricing-card">
-        <h2>🏊 Swimming Pool Entry</h2>
+        <h2>Swimming Pool Entry</h2>
         <p>Enjoy a refreshing swim in our modern pool.</p>
         <p class="price">50 MAD</p>
       </div>
 
       <div class="pricing-card">
-        <h2>🎠 Kids Playground</h2>
+        <h2>Kids Playground</h2>
         <p>Safe and fun activities for children of all ages.</p>
         <p class="price">30 MAD</p>
       </div>
 
       <div class="pricing-card">
-        <h2>🍴 Restaurant</h2>
+        <h2>Restaurant</h2>
         <p>Delicious meals & snacks. Prices vary by menu item.</p>
         <p class="price">Varies</p>
       </div>
@@ -55,7 +66,27 @@
     </div>
   </main>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/212600000000" class="whatsapp-float">💬 WhatsApp</a>
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>Visit Us</h3>
+        <p>Zahoua, Meknes, Morocco</p>
+        <p>Daily: 10:00–20:00</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+212600000000">+212 600 000 000</a></p>
+        <p><a href="mailto:contact@ludiparc-meknes.com">contact@ludiparc-meknes.com</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 Ludiparc Meknes. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/212600000000" class="whatsapp-float" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <script src="js/scripts.js" defer></script>
 </body>
 </html>
