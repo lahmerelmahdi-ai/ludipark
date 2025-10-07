@@ -1,92 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LudiParc Meknès – Privacy Policy</title>
+  <meta charset="utf-8" />
+  <title>Privacy Policy – LudiParc Meknès</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
   <style>
-    :root { --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#f8fafc; --link:#2563eb; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; color: var(--ink); background:#fff; }
-    header { padding: 32px 20px 12px; background: var(--bg); border-bottom:1px solid var(--line); }
-    main { max-width: 900px; margin: 0 auto; padding: 24px 20px 80px; }
-    h1 { margin: 0 0 6px; font-size: 28px; }
-    .meta { color:var(--muted); font-size: 14px; }
-    h2 { margin-top: 28px; font-size: 20px; }
-    p, li { font-size: 16px; }
-    .card { background:#ffffff; border:1px solid var(--line); border-radius: 12px; padding: 18px 16px; margin: 14px 0; }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    footer { position: sticky; bottom:0; width:100%; background:#0f172a; color:#e2e8f0; }
-    .footer-inner { max-width:900px; margin:0 auto; padding:14px 20px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; }
-    .footer-contact a { color:#93c5fd; }
+    :root{
+      --bg: #0b0c10;
+      --card: #0f172a;
+      --ink: #e5e7eb;
+      --muted:#94a3b8;
+      --line:#1f2937;
+      --brand:#38bdf8;
+      --brand-2:#60a5fa;
+      --ok:#22c55e;
+      --warn:#f59e0b;
+      --radius:14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f8fafc;
+        --card:#ffffff;
+        --ink:#0f172a;
+        --muted:#475569;
+        --line:#e2e8f0;
+        --brand:#2563eb;
+        --brand-2:#22c55e;
+        --shadow: 0 8px 24px rgba(2,6,23,.08);
+      }
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--ink); background: radial-gradient(1200px 600px at 10% -10%, rgba(34,197,94,.18), transparent 60%),
+                          radial-gradient(900px 600px at 100% 0%, rgba(37,99,235,.18), transparent 50%),
+                          var(--bg);
+      line-height:1.6;
+    }
+
+    header{
+      position:relative; overflow:hidden;
+      padding:48px 20px 28px;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(400px 280px at 20% 0%, rgba(96,165,250,.25), transparent 60%),
+        radial-gradient(500px 320px at 80% -10%, rgba(34,197,94,.22), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));
+    }
+    .wrap{max-width:960px; margin:0 auto; padding:0 20px}
+    h1{margin:0 0 6px; font-size: clamp(28px, 4vw, 40px); letter-spacing:.2px}
+    .meta{color:var(--muted); font-size:14px}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-size:13px;
+      background: color-mix(in oklab, var(--card) 85%, black 15%);
+    }
+    .badge .dot{width:8px; height:8px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 3px rgba(34,197,94,.15)}
+    main{padding:28px 0 96px}
+    .card{
+      background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+      padding:22px 20px; box-shadow:var(--shadow); margin:16px 0;
+    }
+    h2{margin:20px 0 8px; font-size:clamp(20px, 2.5vw, 24px)}
+    p,li{font-size:16px}
+    ul{padding-left:20px}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .grid{display:grid; gap:16px}
+    @media (min-width: 860px){ .grid{grid-template-columns:1.2fr .8fr} }
+
+    .kvs{display:grid; grid-template-columns: 160px 1fr; gap:8px 14px; align-items:start}
+    .kvs b{color:var(--muted)}
+    .toc{display:flex; flex-wrap:wrap; gap:8px}
+    .toc a{border:1px solid var(--line); padding:8px 12px; border-radius:10px; background:var(--card)}
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-size:13px;
+    }
+    .ok{color:var(--ok)} .warn{color:var(--warn)}
+    hr{border:0; border-top:1px solid var(--line); margin:24px 0}
+
+    footer{
+      border-top:1px solid var(--line); padding:20px; color:var(--muted);
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.06));
+    }
+    .contact a{color:var(--brand-2)}
+    @media print{
+      body{background:#fff}
+      header, footer{box-shadow:none}
+      .card{box-shadow:none}
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Privacy Policy</h1>
-    <div class="meta">App: <strong>LudiParc Meknès</strong> • Last Updated: <strong>August 31, 2025</strong></div>
+    <div class="wrap">
+      <div class="badge"><span class="dot"></span> Privacy-first design</div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">App: <strong>LudiParc Meknès</strong> • Last updated: <strong>October 7, 2025</strong></div>
+    </div>
   </header>
 
-  <main>
+  <main class="wrap">
     <div class="card">
-      <p>Thank you for using <strong>LudiParc Meknès</strong>. We respect your privacy and keep data collection to the minimum needed for basic app functionality.</p>
+      <p>We respect your privacy. This Privacy Policy explains how <strong>LudiParc Meknès</strong> handles user data and the limited circumstances in which data may be collected or used.</p>
+      <div class="toc" aria-label="Table of contents">
+        <a href="#data-we-collect">Data we collect</a>
+        <a href="#purpose">Purpose</a>
+        <a href="#processing">Processing & retention</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#security">Security</a>
+        <a href="#deletion">Data deletion</a>
+        <a href="#communications">Communication features</a>
+        <a href="#children">Children’s privacy</a>
+        <a href="#updates">Policy updates</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
-    <h2>1) Data We Collect</h2>
-    <p><strong>Email address</strong> — collected only if you choose to contact us using the in-app contact form or the “Email” button.</p>
+    <section id="data-we-collect" class="grid">
+      <div class="card">
+        <h2>1) Data we collect</h2>
+        <p>The app collects <strong>only</strong> the following data when you choose to use the contact option:</p>
+        <ul>
+          <li><strong>Email address</strong> — collected if you voluntarily send us a message through the in-app contact option.</li>
+        </ul>
+        <p>No other personal or sensitive data (such as location, contacts, camera, microphone, or storage) is collected.</p>
+      </div>
+      <aside class="card">
+        <div class="kvs">
+          <b>Type</b><div>Email address</div>
+          <b>Collected</b><div class="pill"><span class="ok">Yes</span> — voluntary</div>
+          <b>Shared</b><div class="pill"><span class="warn">No</span></div>
+          <b>Scope</b><div>Used only to reply to your inquiry</div>
+        </div>
+      </aside>
+    </section>
 
-    <h2>2) Purpose of Use</h2>
-    <ul>
-      <li>To reply to your inquiries and provide customer support.</li>
-    </ul>
+    <section id="purpose" class="card">
+      <h2>2) Purpose of use</h2>
+      <ul>
+        <li><strong>App functionality</strong> — enables the contact feature to work.</li>
+        <li><strong>Developer communications</strong> — allows us to reply to your inquiries and support requests.</li>
+      </ul>
+    </section>
 
-    <h2>3) Data Sharing</h2>
-    <p>We <strong>do not share</strong> your email address with third parties.</p>
+    <section id="processing" class="card">
+      <h2>3) Processing & retention</h2>
+      <ul>
+        <li><strong>Ephemeral processing:</strong> your email address is processed only at the moment you send your message.</li>
+        <li>The app does not store personal data locally or on our servers.</li>
+        <li>Messages are sent via your device’s email app and may be retained in your outbox and our inbox according to normal email practices.</li>
+      </ul>
+    </section>
 
-    <h2>4) Storage &amp; Retention</h2>
-    <ul>
-      <li>Emails you send open in your device’s email app and are transmitted to our support inbox.</li>
-      <li>We do not run analytics or advertising SDKs.</li>
-      <li>We do not store personal data inside the app beyond what is necessary to send your message.</li>
-    </ul>
+    <section id="sharing" class="card">
+      <h2>4) Data sharing</h2>
+      <p>We <strong>do not share</strong> your data with third parties. Collected data is used only to respond to your inquiry.</p>
+    </section>
 
-    <h2>5) Security</h2>
-    <p>Email messages are transmitted over encrypted channels where supported by your email provider and network.</p>
+    <section id="security" class="card">
+      <h2>5) Security</h2>
+      <p>Messages are transmitted securely by your email provider where supported. The app itself does not transmit data over insecure channels.</p>
+    </section>
 
-    <h2>6) Your Choices &amp; Data Deletion</h2>
-    <ul>
-      <li>You can request deletion of your email/message at any time by writing to <a href="mailto:contact@ludiparc.live?subject=Data%20Deletion%20Request%20-%20LudiParc%20Mekn%C3%A8s">contact@ludiparc.live</a>.</li>
-      <li>Please include the email address you used and any relevant details so we can locate and delete your message.</li>
-      <li>You can also uninstall the app to remove any local data created on your device.</li>
-    </ul>
+    <section id="deletion" class="card">
+      <h2>6) Data deletion</h2>
+      <p>You can request deletion of any email/messages you have sent us at any time:</p>
+      <ul>
+        <li>Send an email to <a href="mailto:contact@ludiparc.live?subject=Data%20Deletion%20Request%20-%20LudiParc%20Mekn%C3%A8s">contact@ludiparc.live</a> with the email address you used, or</li>
+        <li>Uninstall the app to remove any local data stored on your device.</li>
+      </ul>
+    </section>
 
-    <h2>7) Communications via WhatsApp &amp; Phone</h2>
-    <ul>
-      <li>Buttons in the app may open WhatsApp or the Phone dialer on your device.</li>
-      <li>We do <strong>not</strong> access your WhatsApp messages or call logs; communication happens within those apps and is governed by their policies.</li>
-    </ul>
+    <section id="communications" class="card">
+      <h2>7) Communication features</h2>
+      <ul>
+        <li>The app provides buttons that open your device’s default apps (Email, Phone, or WhatsApp) to contact us.</li>
+        <li>We do <strong>not</strong> access your messages or call logs; external apps are governed by their own privacy policies.</li>
+      </ul>
+    </section>
 
-    <h2>8) Children’s Privacy</h2>
-    <p>The app is not directed to children. We do not knowingly collect personal information from children.</p>
+    <section id="children" class="card">
+      <h2>8) Children’s privacy</h2>
+      <p>The app is not directed to children, and it does not collect personal information from children.</p>
+    </section>
 
-    <h2>9) Changes to This Policy</h2>
-    <p>We may update this policy to reflect app changes. We will update the “Last Updated” date above.</p>
+    <section id="updates" class="card">
+      <h2>9) Changes to this policy</h2>
+      <p>We may update this policy to reflect app changes. Updates will be posted here with a new “Last updated” date.</p>
+    </section>
 
-    <h2>10) Contact Us</h2>
-    <ul>
-      <li>Email: <a href="mailto:contact@ludiparc.live">contact@ludiparc.live</a></li>
-      <li>Phone: <a href="tel:+212675018259">+212675018259</a></li>
-      <li>Address: Meknès, Morocco</li>
-    </ul>
+    <section id="contact" class="card">
+      <h2>10) Contact</h2>
+      <ul class="contact">
+        <li>Email: <a href="mailto:contact@ludiparc.live">contact@ludiparc.live</a></li>
+        <li>Phone: <a href="tel:+212675018259">+212 675 018 259</a></li>
+        <li>Address: Meknès, Morocco</li>
+      </ul>
+    </section>
+
+    <hr />
+    <p style="color:var(--muted); font-size:14px">This page is intended to align with Google Play’s Data Safety disclosures: Personal info → Email address (Collected; Not shared; Ephemeral; Required; Purpose: App functionality & Developer communications).</p>
   </main>
 
   <footer>
-    <div class="footer-inner footer-contact">
-      <div>Contact us</div>
-      <div>
-        <a href="mailto:contact@ludiparc.live">contact@ludiparc.live</a> • <a href="tel:+212675018259">+212675018259</a>
-      </div>
-    </div>
+    <div class="wrap">© 2025 LudiParc Meknès. All rights reserved.</div>
   </footer>
 </body>
 </html>
